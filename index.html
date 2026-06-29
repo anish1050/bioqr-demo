@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BioQR — Biometric + Identity-Locked QR Security</title>
+  <meta name="description" content="BioQR is a secure corporate dashboard zero-knowledge identity validation platform. Protect dynamic QR access keys with WebAuthn biometrics.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img id="logo-img" src="images/logo.png" alt="BioQR Logo">
+        <span>BioQR</span>
+      </a>
+      <div class="navbar-links">
+        <a href="#screenshots" class="nav-link">Screenshots</a>
+        <a href="#tech" class="nav-link">Tech Stack</a>
+        <a href="https://github.com/anish1050/BioQR_WebApp" target="_blank" rel="noopener" class="nav-link nav-link--primary">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__content">
+      <div class="hero__badge">
+        Identity-Locked dynamic QR Platform
+      </div>
+      <h1>Biometric and Cryptographic Security</h1>
+      <p class="hero__desc">
+        BioQR is a sophisticated zero-knowledge security platform that couples hardware-backed biometric verification (TouchID/FaceID) with identity-locked dynamic QR validation to safeguard enterprise resources.
+      </p>
+      <div class="hero__actions">
+        <a id="demo-btn" href="https://bioqr-webapp-lvzy.onrender.com" target="_blank" rel="noopener" class="btn btn--primary" style="display: none;">
+          Try Live Demo
+        </a>
+        <a href="https://github.com/anish1050/BioQR_WebApp" target="_blank" rel="noopener" class="btn btn--outline">
+          View Source Code
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Notice Banner ===== -->
+  <section class="notice" id="offline-notice" style="display: none;">
+    <div class="container">
+      <div class="notice__card">
+        <div class="notice__text">
+          <h3>Live Demo Temporarily Offline</h3>
+          <p>
+            The live demo is temporarily unavailable because the free hosting tier on Render has been exhausted.
+            You can still explore the full source code on GitHub and view the application screenshots below to see how BioQR works.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Screenshots ===== -->
+  <section class="section" id="screenshots">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">App Preview</span>
+        <h2 class="section__title">Application Screenshots</h2>
+      </div>
+
+      <div class="screenshots-grid">
+        <!-- Screenshot 1 — Homepage -->
+        <div class="screenshot-card">
+          <img
+            src="images/WelcomePage.png"
+            alt="BioQR Homepage showing core security details and dynamic feature grids"
+            class="screenshot-card__img"
+          >
+          <div class="screenshot-card__body">
+            <h3 class="screenshot-card__title">Welcome Page</h3>
+            <p class="screenshot-card__desc">Premium dark-mode entry page showcasing key cryptographic solutions, team layouts, and Android links.</p>
+          </div>
+        </div>
+
+        <!-- Screenshot 2 — Login -->
+        <div class="screenshot-card">
+          <img
+            src="images/SignIn_Page.png"
+            alt="BioQR Login interface supporting biometric and standard logins"
+            class="screenshot-card__img"
+          >
+          <div class="screenshot-card__body">
+            <h3 class="screenshot-card__title">Sign In Page</h3>
+            <p class="screenshot-card__desc">Sign-in dashboard with integrated WebAuthn checks for instant biometric keystore handshakes.</p>
+          </div>
+        </div>
+
+        <!-- Screenshot 3 — Dashboard / Dynamic QR keys -->
+        <div class="screenshot-card">
+          <img
+            src="images/DashboardPage.png"
+            alt="BioQR User Area showing dynamic QR code generation tools"
+            class="screenshot-card__img"
+          >
+          <div class="screenshot-card__body">
+            <h3 class="screenshot-card__title">User Dashboard</h3>
+            <p class="screenshot-card__desc">Dynamic QR creation panel letting users generate identity-locked dynamic credentials verified via biometrics.</p>
+          </div>
+        </div>
+
+        <!-- Screenshot 4 — Analytics Page -->
+        <div class="screenshot-card">
+          <img
+            src="images/AnalyticsPage.png"
+            alt="BioQR Analytics Dashboard and biometric logs monitoring systems"
+            class="screenshot-card__img"
+          >
+          <div class="screenshot-card__body">
+            <h3 class="screenshot-card__title">Analytics Page</h3>
+            <p class="screenshot-card__desc">Security audit logs, system performance charts, and real-time biometric validation logs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Security Layer</span>
+        <h2 class="section__title">Key Capabilities</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-item__text">
+            <h4>Identity-Locked Dynamic QR</h4>
+            <p>Generate QR keys encrypted specifically for a receiver's public key. Decryption is only possible after a local biometric authentication scan.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__text">
+            <h4>Biometric WebAuthn Keys</h4>
+            <p>Onboard and map user hardware tokens (TouchID, FaceID, Windows Hello) using the FIDO2 standard directly via standard browser WebAuthn hooks.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__text">
+            <h4>Organization & Team Dashboards</h4>
+            <p>Enterprise administration section mapped with custom team scopes and distinct organization access control parameters.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__text">
+            <h4>Live System Health Analytics</h4>
+            <p>Modernized Status panel that pings server processes, database tables, and external endpoints to measure live latency graphs.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__text">
+            <h4>Security-First Framework</h4>
+            <p>Strict endpoint validation with Express v5 rate-limiters, CSRF protection double cookies, and encrypted JWT storage.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-item__text">
+            <h4>Cross-Platform Support</h4>
+            <p>Integrated Android mobile app codebase that queries the Express APIs to verify dynamic QR codes locally on the move.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Documentation & Architecture ===== -->
+  <section class="section" id="docs">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Technical Reference</span>
+        <h2 class="section__title">Architecture & System Flow</h2>
+      </div>
+
+      <div class="docs-grid">
+        <!-- Flow 1: Identity-Locked QR Verification -->
+        <div class="docs-card">
+          <h3>QR Lock & Verification Flow</h3>
+          <p class="docs-card__sub">How sensitive keys are encrypted and verified using biometrics</p>
+          
+          <div class="flowchart">
+            <div class="flow-step">
+              <div class="flow-step__icon">1</div>
+              <div class="flow-step__label">Generate QR</div>
+              <p>Sender encrypts access data using the receiver's cryptographic public key.</p>
+            </div>
+            
+            <div class="flow-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            
+            <div class="flow-step">
+              <div class="flow-step__icon">2</div>
+              <div class="flow-step__label">Biometric Check</div>
+              <p>Receiver scans QR. Device triggers FaceID/Fingerprint scan to verify identity.</p>
+            </div>
+
+            <div class="flow-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-step__icon">3</div>
+              <div class="flow-step__label">Access Granted</div>
+              <p>Upon matching biometrics, hardware key decrypts data locally. Access is granted.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flow 2: WebAuthn Device Registration -->
+        <div class="docs-card">
+          <h3>WebAuthn Registration Flow</h3>
+          <p class="docs-card__sub">How devices are securely linked to user accounts</p>
+          
+          <div class="flowchart">
+            <div class="flow-step">
+              <div class="flow-step__icon">1</div>
+              <div class="flow-step__label">Enroll Device</div>
+              <p>User requests biometric lock setup from the dashboard.</p>
+            </div>
+            
+            <div class="flow-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+            
+            <div class="flow-step">
+              <div class="flow-step__icon">2</div>
+              <div class="flow-step__label">Browser Prompt</div>
+              <p>FIDO2/WebAuthn opens hardware biometric verification prompt.</p>
+            </div>
+
+            <div class="flow-arrow">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+
+            <div class="flow-step">
+              <div class="flow-step__icon">3</div>
+              <div class="flow-step__label">Save Public Key</div>
+              <p>Biometric match triggers creation of keys. Public key is saved in MySQL database.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Tech Stack ===== -->
+  <section class="section" id="tech">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__label">Architecture</span>
+        <h2 class="section__title">Technology Stack</h2>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <h3 class="tech-card__name">React 19 & Vite</h3>
+          <p class="tech-card__desc">Premium dark-mode responsive client interface bundled dynamically with Vite compilation.</p>
+        </div>
+        <div class="tech-card">
+          <h3 class="tech-card__name">TypeScript</h3>
+          <p class="tech-card__desc">Strong compile-time type safety across database controllers and REST payload formats.</p>
+        </div>
+        <div class="tech-card">
+          <h3 class="tech-card__name">Node & Express</h3>
+          <p class="tech-card__desc">Robust backend layer managing biometric key mapping and JWT auth routes.</p>
+        </div>
+        <div class="tech-card">
+          <h3 class="tech-card__name">MySQL Database</h3>
+          <p class="tech-card__desc">Relational database storing user credential links and organization layouts (TiDB Cloud).</p>
+        </div>
+        <div class="tech-card">
+          <h3 class="tech-card__name">MongoDB</h3>
+          <p class="tech-card__desc">Document-based log vault tracking security audits and server latency timelines.</p>
+        </div>
+        <div class="tech-card">
+          <h3 class="tech-card__name">WebAuthn & Passport</h3>
+          <p class="tech-card__desc">FIDO2/WebAuthn library handling authenticators alongside OAuth connections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Project maintained by <a href="https://github.com/anish1050" target="_blank" rel="noopener">Anish</a></p>
+      <div class="footer__links">
+        <a href="https://github.com/anish1050/BioQR_WebApp" target="_blank" rel="noopener">GitHub Repository</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#tech">Tech Stack</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Script behavior ===== -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 20) {
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+      } else {
+        navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.2)';
+      }
+    });
+
+    // Dynamic Live Demo check
+    const RENDER_URL = "https://bioqr-webapp-lvzy.onrender.com/";
+    const demoBtn = document.getElementById('demo-btn');
+    const offlineNotice = document.getElementById('offline-notice');
+
+    // Create a hidden image to load the favicon. 
+    // If Render returns 503 (or is down), it returns HTML, which fails to load as an image.
+    const img = new Image();
+    img.src = RENDER_URL + "favicon.ico?v=" + new Date().getTime(); // Prevent cache
+
+    const timeoutId = setTimeout(() => {
+      img.src = ""; // Stop loading
+      handleOffline();
+    }, 6000);
+
+    img.onload = () => {
+      clearTimeout(timeoutId);
+      handleOnline();
+    };
+
+    img.onerror = () => {
+      clearTimeout(timeoutId);
+      handleOffline();
+    };
+
+    function handleOnline() {
+      demoBtn.style.display = 'inline-flex';
+      offlineNotice.style.display = 'none';
+    }
+
+    function handleOffline() {
+      demoBtn.style.display = 'none';
+      offlineNotice.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
